@@ -1,0 +1,38 @@
+.footer {
+    padding: 7.5rem 0;
+    background-color: $color-secondary-dark;
+    font-size: 1.4rem;
+
+    &__list {
+        list-style: none;
+
+        &:last-of-type li{
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__link {
+        &--info {
+            margin-left: 1rem;
+        }
+        &:link,
+        &:visited {
+            color: $color-grey-light-2;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary;
+        }
+    }
+}

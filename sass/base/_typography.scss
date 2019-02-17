@@ -1,0 +1,47 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    /*font-size: 18px;*/
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+.heading__primary {
+    color: $color-secondary-dark;
+
+    // @include respond(tab-port) {
+    //     font-size: 50% // 1rem = 8px
+    // }
+
+
+    &--main {
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+.heading__secondary{
+    color: $color-secondary-dark;
+
+    &--main {
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 200;
+        color: $color-grey-dark-2
+    }
+}

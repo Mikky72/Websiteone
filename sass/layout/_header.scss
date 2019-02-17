@@ -1,0 +1,56 @@
+.header {
+    min-height: 100vh;
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: $color-secondary-light;
+    background-size: cover;
+    background-position: top;
+
+    &__logo-box {
+        position: relative;
+        top: 4rem;
+        min-height: 15vh;
+
+        &--logo {
+            height: 4rem;
+
+            @include respond(phone) {
+                height: 3rem;
+            }
+        }
+
+        &--btn {
+            float: right;
+            box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+
+            @include respond(tab-land) {
+                top: -1rem;
+            }
+
+            @include respond(phone) {
+                padding: 1rem 4rem;
+            }
+        }
+    }
+
+    &__content {
+        min-height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        backface-visibility: hidden;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include respond(tab-port) {
+            text-align: center
+        }
+
+        &--text {
+            animation: moveInLeft 1s ease-in-out;
+        }
+
+        &--image {
+            animation: moveInRight 1s ease-in-out;
+        }
+    }
+}
